@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
 
+import gameBoards from './gameBoards'
+
+
 function App() {
+
+  console.log('maps', gameBoards)
+
+  const totalGames = useTotalGames()
+   
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="ticketToRide">
+      <h1>Ticket to Ride - Statistics!</h1>
+
+      <p>Total Games</p>
+
+      <p>Pedastal Rank 1 - 2 - 3</p>
+      <p>Longest Trainer</p>
+      <p>The GlobeTrotter</p>
+      <p>The Explorer</p>
+
+
+
+      <p>VIEW Games by Player</p>
+      <p>VIEW Games by Board</p>
+      {/* {gameBoards.map((board, i) => (
+        <p key={i}>{board}</p>
+      ))} */}
+
+
+
+
+
+
     </div>
   );
 }
